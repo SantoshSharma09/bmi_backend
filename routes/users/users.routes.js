@@ -1,7 +1,7 @@
 const express = require("express");
 const userCredentialRoute = express.Router();
 const bcrypt = require("bcrypt");
-const { userCredential_Model } = require("../../model/users/users.model");
+const { userCredential_Model } = require("../../Model/users/users.model");
 const jwt = require("jsonwebtoken");
 
 userCredentialRoute.post("/register", (req, res) => {
